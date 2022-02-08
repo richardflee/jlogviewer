@@ -1,0 +1,134 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "17.0.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "DEMO!!"
+			"defaultCloseOperation": 2
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp viewerTabbedPane::l:::x}"
+					"$verticalGroup": "par l {comp viewerTabbedPane::t:::x}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "viewerTabbedPane"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {space :::p, par l {comp panel1::t:::x, comp extractsTableScrollPane::t:::x}, space :::p}}"
+							"$verticalGroup": "par l {seq l {comp extractsTableScrollPane::::367:x, space u:::p, comp panel1:::p::p, space :::p}}"
+						} ) {
+							name: "logViewerPanel"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+								"$horizontalGroup": "par l {seq l {space :::p, comp openLogFileButton:::p:120:p, space u:::p, comp openExtractsFileButton:::p:110:p, space u:::p, comp addCommentButton:::p:110:p, space u:::p, comp saveExtractsFileButton:::p:110:p, space ::53:x, comp linesTextField:::p:50:p, space s:::p, comp logFilesTextField:::p:303:p, space :::p}}"
+								"$verticalGroup": "par l {seq {space :::p, par l {par b {comp openExtractsFileButton::b:p:30:p, comp openLogFileButton::b:p:30:p, comp addCommentButton::b:p:30:p, comp saveExtractsFileButton::b:p:30:p}, par b:l {comp logFilesTextField::b:p::p, comp linesTextField::b:p::p}}, space :::p}}"
+							} ) {
+								name: "panel1"
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "openLogFileButton"
+									"text": "Open Log File"
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "openExtractsFileButton"
+									"text": "Open Extracts"
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "logFilesTextField"
+									"editable": false
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								} )
+								add( new FormComponent( "javax.swing.JTextField" ) {
+									name: "linesTextField"
+									"editable": false
+									"horizontalAlignment": 0
+									auxiliary() {
+										"JavaCodeGenerator.variableModifiers": 4
+									}
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "addCommentButton"
+									"text": "Add Comment"
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "saveExtractsFileButton"
+									"text": "Save Extracts"
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "extractsTableScrollPane"
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Log Viewer Table"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {space :::p, comp panel2:::::x, space :::p}, comp matchersTableScrollPane::l::944:x}"
+							"$verticalGroup": "par l {seq l {comp matchersTableScrollPane::::371:x, space :::p, comp panel2:::p::p, space :::p}}"
+						} ) {
+							name: "matchersTablePanel"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+								"$horizontalGroup": "par l {seq l {comp toggleSelectButton:1::p:120:p, space u:::p, comp toggleWarningsButton:1::p:150:p, space u:::p, comp saveTableDataButton:1::p:120:p, space ::454:x}}"
+								"$verticalGroup": "par l {seq {space :::p, par b {comp toggleSelectButton::b:p:30:p, comp toggleWarningsButton::b:p:30:p, comp saveTableDataButton::b:p:30:p}, space :::p}}"
+							} ) {
+								name: "panel2"
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "toggleSelectButton"
+									"text": "Select All"
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "toggleWarningsButton"
+									"text": "Select WARNINGS"
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "saveTableDataButton"
+									"text": "Save Table Data"
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "matchersTableScrollPane"
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": " Matchers Table"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {space :::p, comp panel6:::::x, space :::p}, comp metricsTableScrollPane::l::944:x}"
+							"$verticalGroup": "par l {seq l {comp metricsTableScrollPane::::371:x, space :::p, comp panel6:::p::p, space :::p}}"
+						} ) {
+							name: "metricsTablePanel"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+								"$horizontalGroup": "par l {seq l {space :::p, comp plotMetricsFileButton:::p:120:p, space u:::p, comp saveMetricsFileButton:::p:120:p, space ::664:x}}"
+								"$verticalGroup": "par l {seq {space :::p, par b {comp plotMetricsFileButton::b:p:30:p, comp saveMetricsFileButton::b:p:30:p}, space :::p}}"
+							} ) {
+								name: "panel6"
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "plotMetricsFileButton"
+									"text": "Plot Metrics"
+								} )
+								add( new FormComponent( "javax.swing.JButton" ) {
+									name: "saveMetricsFileButton"
+									"text": "Save Metrics File"
+								} )
+							} )
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "metricsTableScrollPane"
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Session Metrics Table"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 975, 520 )
+		} )
+	}
+}

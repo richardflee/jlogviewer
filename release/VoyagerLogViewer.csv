@@ -1,0 +1,44 @@
+Select, Match Message, Preset Message, Type
+1,Run Action => Sequence: Start,,HIGHLIGHT
+1,CRITICAL -,,CRITICAL
+1,Emergency Exit Event Received : RUNNING CODE,Emergency Exit Event Received,EMERGENCY
+1,Emergency Resume Event Received : RUNNING CODE,Emergency Resume Event Received,EMERGENCY
+1,Emergency Suspend Event Received : RUNNING CODE,Emergency Suspend Event Received,EMERGENCY
+1,Blind Solving Error :,Blind solving error,WARNING
+1,Emergency Suspend TIMEOUT : Request Exec of Emergency EXIT Code,,WARNING
+1,GUIDING STAR LOST,,WARNING
+1,Plate Solving Error :,Plate solving error,WARNING
+1,Start Guiding Error,,WARNING
+1,Target Is lower than requested Min Altitude,,WARNING
+1,WARNING - [Camera,,WARNING
+1,WARNING - [DragScript Run,,WARNING
+1,[GET_NEXT_ISTRUZIONE_Code ],,EVENT
+1,Safety Monitor Control is Connected,,EVENT
+1,Script Ended,,EVENT
+1,Script Started,,EVENT
+1,Setup is Already,,EVENT
+1,Starting Meridian Flip,,EVENT
+1,Try Send Mail To,,EVENT
+1,[SkyFlat ] - [GET_EXPOSURE_TIME_Code ] - Mean ADU,,INFO
+1,Action Time [DRAG_SCRIPT],,INFO
+1,Action Time [SEQUENCE],,INFO
+1,Application Start,,INFO
+1,Astronomical Night Start,,INFO
+1,Best Performance obtained from your Mount in this pointing,,INFO
+1,CCD Peltier Cooled,,INFO
+1,Closing Application,,INFO
+1,Dawn Start @,,INFO
+1,Dusk Start @,,INFO
+1,File FIT Saved,,INFO
+1,Focus Done,,INFO
+1,loaded as Actual Setting Profile,,INFO
+1,NEW_Connetti,,INFO
+1,RemoveSavedFIT,,INFO
+1,Run Action => Connect Setup,,INFO
+1,Run Action => Disable Events,,INFO
+1,Run Action => Enable Events,,INFO
+1,SafetyMonitor Disconnected,,INFO
+1,Selected Star for Focus,,INFO
+1,Start Setup Connect,,INFO
+1,START_NEXT_ELEMENT_SEQUENCE_Code,,INFO
+1,Stats - RMS Error,,INFO
